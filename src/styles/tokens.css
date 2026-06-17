@@ -1,0 +1,26 @@
+/* デザイントークン（CLAUDE.md 指定の出発点をそのまま採用） */
+:root {
+  --color-bg: #f7fbff;
+  --color-surface: #ffffff;
+  --color-surface-soft: #eef7ff;
+  --color-primary: #8ecae6;
+  --color-primary-deep: #4f9fc7;
+  --color-text: #263238;
+  --color-text-muted: #78909c;
+  --color-border: #d8eaf4;
+  --color-hold: #d8d4f2;
+  --color-keep: #cdebd6;
+  --color-cancel: #f3d6d6;
+
+  /* 状態の“濃い側”（文字・枠・選択中の強調用。淡色だけだと弱いので補助） */
+  --color-keep-deep: #3f8c5f;
+  --color-cancel-deep: #b15c5c;
+  --color-hold-deep: #6a5fb0;
+
+  --radius-card: 20px;
+  --radius-button: 999px;
+  --shadow-card: 0 8px 24px rgba(60, 100, 130, 0.08);
+
+  --font-ui: "Zen Kaku Gothic New", system-ui, sans-serif;
+  --font-body: "Noto Sans JP", system-ui, sans-serif;
+}
