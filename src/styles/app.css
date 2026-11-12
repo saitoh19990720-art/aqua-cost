@@ -45,6 +45,7 @@ button { font-family: inherit; cursor: pointer; }
 .tab {
   border: 0; background: transparent; color: var(--color-text-muted);
   padding: 8px 18px; border-radius: var(--radius-button); font-size: 14px; font-weight: 500;
+  min-height: 44px; /* 指で押しやすい大きさ */
 }
 .tab.is-active { background: var(--color-surface-soft); color: var(--color-primary-deep); }
 
@@ -78,10 +79,11 @@ button { font-family: inherit; cursor: pointer; }
 .filter {
   border: 1px solid var(--color-border); background: var(--color-surface);
   color: var(--color-text-muted); padding: 7px 14px; border-radius: var(--radius-button); font-size: 13px;
+  min-height: 44px;
 }
 .filter.is-active { background: var(--color-primary-deep); color: #fff; border-color: var(--color-primary-deep); }
 
-.btn { border: 0; border-radius: var(--radius-button); padding: 10px 20px; font-size: 14px; font-weight: 600; }
+.btn { border: 0; border-radius: var(--radius-button); padding: 10px 20px; font-size: 14px; font-weight: 600; min-height: 44px; }
 .btn--primary { background: var(--color-primary-deep); color: #fff; }
 .btn--primary:hover { filter: brightness(1.05); }
 .btn--ghost { background: transparent; color: var(--color-text-muted); border: 1px solid var(--color-border); }
@@ -132,7 +134,7 @@ button { font-family: inherit; cursor: pointer; }
 .card__decisions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .card__foot { display: flex; justify-content: space-between; align-items: center; }
 .card__reviewed { font-size: 11px; color: var(--color-text-muted); }
-.link-btn { background: none; border: 0; color: var(--color-text-muted); font-size: 12px; text-decoration: underline; padding: 4px; }
+.link-btn { background: none; border: 0; color: var(--color-text-muted); font-size: 12px; text-decoration: underline; padding: 4px; min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
 .link-btn:hover { color: var(--color-cancel-deep); }
 
 /* ---- 判断ボタン（色だけに頼らない：形＋ラベル＋押下） ---- */
@@ -140,6 +142,7 @@ button { font-family: inherit; cursor: pointer; }
   display: flex; align-items: center; justify-content: center; gap: 5px;
   border: 1px solid var(--color-border); background: var(--color-surface);
   color: var(--color-text); padding: 9px 4px; border-radius: 12px; font-size: 13px; font-weight: 500;
+  min-height: 44px;
 }
 .status-btn__glyph { font-size: 11px; }
 .status-btn--keep.is-active   { background: var(--color-keep);   border-color: var(--color-keep-deep);   color: #20402c; }

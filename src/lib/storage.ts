@@ -26,7 +26,12 @@ export function saveSubscriptions(items: Subscription[]): void {
 }
 
 export function hasSeeded(): boolean {
-  return localStorage.getItem(SEEDED_KEY) === "1";
+  try {
+    return localStorage.getItem(SEEDED_KEY) === "1";
+  } catch {
+    // 保存領域が使えない環境（ブラウザ設定でブロック等）でもアプリは落とさない
+    return false;
+  }
 }
 
 export function markSeeded(): void {
